@@ -1,1 +1,1 @@
-![recording](https://github.com/S21810014/tugasMobileProgramming/rec.gif)
+![recording](https://github.com/S21810014/tugasMobileProgramming/raw/main/rec.gif)
