@@ -8,13 +8,13 @@ import axios from 'axios'
 
 const ResultPage = () => {
     const [apiData, setApiData] = useState([])
-    const [numOfRequest, setNumOfRequest] = useState(0) //this will ensure we only get the API once
+    const [numOfRequest, setNumOfRequest] = useState(0) 
 
     if(numOfRequest < 1) {
         axios.get('https://jsonplaceholder.typicode.com/users')
         .then(data => {
             setApiData(data.data)
-            setNumOfRequest(1)
+            setNumOfRequest(1)  //this will ensure we only get the API once
         })
     }
 
