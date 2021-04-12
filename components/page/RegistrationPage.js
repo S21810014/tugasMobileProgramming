@@ -41,7 +41,8 @@ const RegistrationPage = ({setData, registerButtonHandler}) => {
     const [phoneNumber, setPhoneNumber] = useState('')
     const setPhoneNumberHandler = (value) => {
         value = value.replace(/\D/g, '');   //https://stackoverflow.com/questions/4993764/how-to-remove-numbers-from-a-string
-                                            //used the code from link above, but adapted to work with states
+                                            //used the code from link above, but adapted to work with states and to do the 
+                                            //opposite of it
         setPhoneNumber(value);
     }
 
