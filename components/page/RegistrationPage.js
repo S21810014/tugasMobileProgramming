@@ -42,7 +42,6 @@ const RegistrationPage = ({setData, registerButtonHandler}) => {
     }
 
     const regButtonHandler = () => {
-        setData(inputs.map(el => ({label: el.label, value: el.stateHandler[0]})))
         inputs.forEach(el => console.log(`${el.label} : ${el.stateHandler[0]}`))
         registerButtonHandler()
     }
