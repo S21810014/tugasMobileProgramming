@@ -16,7 +16,7 @@ const Tombol = ({label, handler}) => {
             alignItems: 'center',
             justifyContent: 'center'
             }} onPress={handler}>
-            <Text style={{color: 'white'}}>{label}</Text>
+                <Text style={{color: 'white'}}>{label}</Text>
             </TouchableOpacity>
         </View>
     )

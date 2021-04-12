@@ -15,16 +15,14 @@ import UsersListPage from './components/page/UsersListPage'
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
+  const [page, setPage] = useState('Registration')  //state to manage which page to be shown
 
-  const [page, setPage] = useState('Registration')
-
+  //handler to change between pages
   const changePage = (pageName) => {
     setPage(pageName)
   }
 
+  //Conditional Rendering
   if(page == 'Registration')
     return (
       <View>
